@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>API Documentation</title>
+</head>
+<body>
+    <h1>My PHP API Gateway - Documentation</h1>
+    <p><strong>Header Required:</strong> <code>X-API-Key</code></p>
+
+    <h2>GET /api/users</h2>
+    <p>Returns a list of users.</p>
+    <pre>
+[
+  { "id": 1, "name": "Alice" },
+  { "id": 2, "name": "Bob" }
+]
+    </pre>
+
+    <h2>GET /api/products</h2>
+    <p>Returns a list of products.</p>
+    <pre>
+[
+  { "sku": "A123", "productName": "Widget" },
+  { "sku": "B456", "productName": "Gadget" }
+]
+    </pre>
+
+    <h2>Error Responses</h2>
+    <ul>
+        <li><strong>401 Unauthorized</strong> – Invalid or missing API key.</li>
+        <li><strong>429 Too Many Requests</strong> – Rate limit exceeded.</li>
+        <li><strong>404 Not Found</strong> – Invalid endpoint.</li>
+    </ul>
+</body>
+</html>
